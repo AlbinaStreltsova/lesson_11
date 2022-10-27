@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+	font-family:"Lato", serif;
+}
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	height: 900px;
+}
+[class*="__container"] {
+	min-height: 100%;
+}
+.page{
+	background: url(../img/image.png) 0 0  no-repeat;
+	height: 100%;
+}
+.page__tractor{
+	width: 400px;
+	height: 400px;
+	position: relative;
+	top: 400px;
+	left: 300px;
+	transform: rotate(5deg) scale(110%);
+
+	animation-duration: 4s;
+	animation-name: run;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+ 
+ @keyframes run{ 
+	0% {
+		left: 300px;
+		transform: rotate(5deg) scale(110%);
+		top: 400px;
+	}
+	25% {
+		
+		transform: rotate(15deg) scale(105%);
+		top: 450px;
+	}
+	55% {
+		transform: rotate(5deg);
+		top: 480px;
+		
+	}
+	100% {
+		transform: rotate(2deg);
+		left: 1200px;
+		top: 500px;
+		
+	}
+  } 
+
+.tractor__cabin{
+	position: absolute;
+	left: 40%;
+	top: 27%;
+	border-bottom: 110px solid rgb(27, 27, 146);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 27%;
+}
+.tractor__top{
+	position: absolute;
+	left: 41.25%;
+	top: 24.8%;
+	border-top: 10px solid rgb(104, 131, 139);
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	height: 0;
+	width: 24.5%;
+}
+.tractor__top-radius{
+	position: absolute;
+	left: 41.3%;
+	top: 23.5%;
+	width: 97px;
+	height: 10px;
+	background-color: rgb(104, 131, 139);
+	border-radius: 100%;
+}
+.tractor__pipe{
+	position: absolute;
+	left: 77%;
+	top: 35%;
+	width: 5%;
+	height: 12%;
+	background-color: rgb(34, 33, 33);
+	border-radius: 40% 40% 0 0;
+}
+.tractor__pipe-top{
+	position: absolute;
+	left: 76.7%;
+	top: 26%;
+	width: 8%;
+	height: 11%;
+}
+
+.tractor__light{
+	position: absolute;
+	left: 44%;
+	top: 22%;
+	width: 4%;
+	height: 4%;
+	background-color: rgb(151, 6, 6);
+	border-radius: 50% 50% 0 0;
+}
+.tractor__light-front{
+	position: absolute;
+	left: 64.5%;
+	top: 40%;
+	width: 3%;
+	height: 4%;
+	background-color: rgb(247, 162, 6);
+	border-radius: 0 50% 50% 0;
+}
+.tractor__protect-left{
+	position: absolute;
+	left: 26%;
+	top: 45%;
+	width: 150px;
+	height: 60px;
+	border-radius:50% 50% 50% 50% / 100% 100% 0% 0%;
+	background-color: rgb(22, 22, 22);
+	transform: rotate(20deg);
+}
+.tractor__roll{
+	position: absolute;
+	border-radius: 50%;
+	background-color: rgb(65, 65, 65);
+	outline: 2px dashed rgb(65, 65, 65) ;
+	
+}
+.tractor__roll--left{
+	left: 24.2%;
+	top: 48%;
+	width: 130px;
+	height: 130px;
+}
+.tractor__roll--right{
+	left: 75%;
+	top: 57.6%;
+	width: 90px;
+	height: 90px;
+}
+.tractor__disk{
+	position: absolute;
+	background-color: rgb(197, 197, 197);
+	border: 1px solid rgb(99, 99, 99);
+	border-radius: 50%;
+	animation-duration: 2s;
+	animation-name: rotate_run;
+	animation-iteration-count: 2;
+	animation-timing-function: linear;
+	
+}
+@keyframes rotate_run {
+	from {
+	  transform: rotate(0deg);
+	}
+  
+	to {
+		transform: rotate(360deg);
+	}
+}
+.disk__bolt{
+	position: absolute;
+	width: 12%;
+	height: 12%;
+	background-color: rgb(32, 32, 32);
+	border: 0.1px solid black;
+	border-radius: 50%;
+}
+.disk__bolt--one{
+	top: 35%;
+	left: 35%;
+	width: 30%;
+	height: 30%;
+	background-color: rgb(119, 119, 119);
+	border: 0.1px solid black;
+	border-radius: 50%;
+}
+.disk__bolt--two{
+	top: 30%;
+	left: 16%;
+}
+.disk__bolt--three{
+	top: 15%;
+	left: 46%;
+}
+.disk__bolt--four{
+	top: 35%;
+	left: 75%;
+}
+.disk__bolt--five{
+	top: 68%;
+	left: 66%;
+}
+.disk__bolt--six{
+	top: 68%;
+	left: 26%;
+}
+.tractor__disk--left{
+	top:61.2%;
+	left:79%;
+	width: 15%;
+	height: 15%;
+}
+.tractor__disk--right{
+	top:53.5%;
+	left:29.6%;
+	width: 22%;
+	height: 22%;
+}
+.tractor__protect-right{
+	position: absolute;
+	top:54%;
+	left:71.5%;
+	width: 80px;
+	height: 80px;
+	background-color: rgb(22, 22, 22);
+	border-radius: 75% 25% 0% 100% / 69% 100% 0% 31%  ;
+}
+.tractor__window-left{
+	position: absolute;
+	left: 43%;
+	top: 29%;
+	border-bottom: 50px solid rgb(226, 221, 221);
+	border-left: 5px solid transparent;
+	border-right: 0 solid transparent;
+	height: 0;
+	width: 33px;
+}
+.tractor__window-right{
+	position: absolute;
+	left: 53%;
+	top: 29%;
+	border-bottom: 90px solid rgb(226, 221, 221);
+	border-left: 0 solid transparent;
+	border-right: 7px solid transparent;
+	height: 0;
+	width: 46px;
+}
+.tractor__window-filler{
+	position: absolute;
+	left: 52%;
+	top: 43%;
+	border-bottom: 35px solid rgb(27, 27, 146);
+	border-left: 0 solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 25px;
+}
+.tractor__cabin-rear{
+	position: absolute;
+	left: 34%;
+	top: 40%;
+	width: 10%;
+	height: 5%;
+	border-top-left-radius: 50%;
+	background-color: rgb(102, 26, 26);
+}
+.tractor__case{
+	position: absolute;
+	left: 50%;
+	top: 46%;
+	border-top: 76px solid rgb(10, 10, 83);
+	border-left: 0 solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 170px;
+
+}
+.tractor__case-radius{
+	position: absolute;
+	left: 50%;
+	top: 43.5%;
+	width: 170px;
+	height: 20px;
+	background-color: rgb(10, 10, 83);
+	border-radius: 100%;
+}
+.tractor__engine{
+	position: absolute;
+	left: 49.1%;
+	top: 53.3%;
+	border-top: 47px solid rgb(5, 5, 32);
+	border-left: 0 solid transparent;
+	border-right: 6px solid transparent;
+	height: 0;
+	width: 170px;
+
+}
+.tractor__engine-radius{
+	position: absolute;
+	left: 56.1%;
+	top: 50.7%;
+	width: 142px;
+	height: 20px;
+	background-color: rgb(5, 5, 32);
+	border-radius: 100%;
+}
+.tractor__stairs{
+	position: absolute;
+	left: 61.5%;
+	top: 54%;
+	height: 20%;
+	width: 6%;
+	transform:skewX(7deg);
+}
+
+.stairs__jumper{
+	height: 20%;
+	border: 2px solid black;
+	margin-top: -1px;
+}
+.stairs__jumper:last-child{
+	border-bottom: none;
+	height: 8%;
+}
+.tractor__headlight{
+	position: absolute;
+	left: 89.5%;
+	top: 47%;
+	width: 4%;
+	height: 4%;
+	background-color: rgb(248, 248, 91);
+	border-radius: 74% 26% 37% 63% / 24% 49% 51% 76% ;
+}
+.tractor__grid{
+	position: absolute;
+	left: 75%;
+	top: 48%;
+	height: 5%;
+	display: inline-block;
+	letter-spacing: 3px;
+	transform:skewX(25deg);
+}
+.grid__bar{
+	display: inline-block;
+	height: 100%;
+	border-left: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
