@@ -21,7 +21,7 @@ body{
 	position: relative;
 	top: 400px;
 	left: 300px;
-	transform: rotate(5deg) scale(110%);
+	transform: rotate(5deg) scale(1.1);
 
 	animation-duration: 4s;
 	animation-name: run;
@@ -33,12 +33,12 @@ body{
  @keyframes run{ 
 	0% {
 		left: 300px;
-		transform: rotate(5deg) scale(110%);
+		transform: rotate(5deg) scale(1.1);
 		top: 400px;
 	}
 	25% {
 		
-		transform: rotate(15deg) scale(105%);
+		transform: rotate(15deg) scale(1.05);
 		top: 450px;
 	}
 	55% {
